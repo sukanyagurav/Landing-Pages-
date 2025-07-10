@@ -19,40 +19,55 @@
   </head>
   <body>
     <header
-      class="max-w-[1200px] mx-auto p-4 py-8 flex justify-between items-center"
+      class="max-w-[1200px] mx-auto p-6 py-8 flex justify-between items-center"
     >
       <a href="#">
         <img src="/assets/logo.svg" />
       </a>
       <button class="border-1 rounded-md py-4 px-8">Request Beta Access</button>
     </header>
-    <section class="banner flex max-w-[1200px] mx-auto p-4">
-      <div>
-        <h1 class="text-4xl">
-          A <span class="font-bold">super</span>
-          <span class="font-bold">solution</span> <br />
-          for your
-          <span class="font-bold">business.</span>
-        </h1>
-        <p class="max-w-[400px]">
-          Our marketing and sales automations help you scale your outreach to
-          get more leads for your company.
-        </p>
-        <button class="border-1 rounded-md py-4 px-8 bg-black text-white">
-          Request Beta Access
-        </button>
+    <section class="banner flex lg:items-center flex-col lg:flex-row max-w-[1200px] mx-auto p-6">
+      <div class="flex flex-col md:flex-row  md:items-center">
+        <div class=" ">
+          <h1 class="text-[2.5rem] lg:text-7xl">
+            A <span class="font-bold">super</span>
+            <span class="font-bold">solution</span> <br />
+            for your
+            <span class="font-bold">business.</span>
+          </h1>
+          <p class="md:max-w-[300px] my-8">
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <button class="border-1 rounded-md py-4 px-8 bg-black text-white">
+            Request Beta Access
+          </button>
+        </div>
+        <picture>
+          <source
+            srcset="/assets/image-hero-portrait.png"
+            media="(min-width:700px)"
+          />
+          <img
+            src="/assets/image-hero-landscape.png"
+            class="w-full md:w-[380px]  relative mt-16 md:mt-0 lg:right-20 -z-1"
+          />
+        </picture>
       </div>
-      <picture>
-        <source
-          srcset="/assets/image-hero-portrait.png"
-          media="(min-width:700px)"
-        />
-        <img src="/assets/image-hero-landscape.png" />
-      </picture>
-      <div>
-        <div><span class="font-bold block text-2xl">2K+</span> <span class="uppercase">Companies</span></div>
-        <div><span class="font-bold block text-2xl">8</span> <span class="uppercase">Languages</span></div>
-        <div><span class="font-bold block text-2xl">1.2M</span> <span class="uppercase">Leads</span></div>
+
+      <div class="flex mt-9 justify-between lg:flex-col gap-4 text-center">
+        <div>
+          <span class="font-bold block text-3xl md:text-5xl mb-4">2K+</span>
+          <span class="uppercase">Companies</span>
+        </div>
+        <div>
+          <span class="font-bold block text-3xl md:text-5xl mb-4">8</span>
+          <span class="uppercase">Languages</span>
+        </div>
+        <div>
+          <span class="font-bold block text-3xl md:text-5xl mb-4">1.2M</span>
+          <span class="uppercase">Leads</span>
+        </div>
       </div>
     </section>
     <script
