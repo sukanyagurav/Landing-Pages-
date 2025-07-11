@@ -16,6 +16,19 @@
       href="/src/style.css"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header
@@ -24,18 +37,20 @@
       <a href="#">
         <img src="/assets/logo.svg" />
       </a>
-      <button class="border-1 rounded-md py-4 px-8">Request Beta Access</button>
+      <button class="border-1 rounded-md py-4 px-4 md:px-8">Request Beta Access</button>
     </header>
-    <section class="banner flex lg:items-center flex-col lg:flex-row max-w-[1200px] mx-auto p-6">
-      <div class="flex flex-col md:flex-row  md:items-center">
-        <div class=" ">
-          <h1 class="text-[2.5rem] lg:text-7xl">
+    <section
+      class="banner flex lg:items-center md:gap-16 flex-col lg:flex-row max-w-[1200px] mx-auto p-6"
+    >
+      <div class="flex flex-col md:flex-row md:items-center gap-12 md:gap-0 relative">
+        <div class="max-w-[500px]">
+          <h1 class="text-[2rem] md:top-18 md:absolute md:text-6xl">
             A <span class="font-bold">super</span>
             <span class="font-bold">solution</span> <br />
             for your
             <span class="font-bold">business.</span>
           </h1>
-          <p class="md:max-w-[300px] my-8">
+          <p class="my-8 md:max-w-[70%]">
             Our marketing and sales automations help you scale your outreach to
             get more leads for your company.
           </p>
@@ -46,16 +61,18 @@
         <picture>
           <source
             srcset="/assets/image-hero-portrait.png"
-            media="(min-width:700px)"
+            media="(min-width:800px)"
           />
           <img
             src="/assets/image-hero-landscape.png"
-            class="w-full md:w-[380px]  relative mt-16 md:mt-0 lg:right-20 -z-1"
+            class="w-full md:w-[350px] -z-1"
           />
         </picture>
       </div>
 
-      <div class="flex mt-9 justify-between lg:flex-col gap-4 text-center">
+      <div
+        class="flex mt-9 justify-between lg:justify-evenly self-stretch lg:flex-col gap-4 text-center md:text-left"
+      >
         <div>
           <span class="font-bold block text-3xl md:text-5xl mb-4">2K+</span>
           <span class="uppercase">Companies</span>

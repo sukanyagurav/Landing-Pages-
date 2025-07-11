@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+@theme{
+  --breakpoint-md:800px;
+}
 button{
   cursor: pointer;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
 }
