@@ -1,12 +1,30 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@theme{
-  --breakpoint-md:800px;
+@theme {
+  --breakpoint-md: 800px;
+  --color-blue: #172339;
+  --color-gray: #49566d;
+  --color-alabaster: #f3ede7;
+  --color-cultured: #faf8f6;
+  --color-purple: #a060ff;
+  --color-pink: #cb30e3;
+  --color-orange: #ffa84e;
 }
-button{
+.upArrow::after{
+  @apply absolute -top-[60px] left-0 translate-x-[-40%] lg:left-[10%] lg:-top-[60px] content-[url(/public/assets/pattern-curved-line-1.svg)];
+}
+.pattern::before{
+  @apply absolute top-[400px] left-[46%] translate-x-[-50%] lg:left-[50%] lg:top-[150px] w-[150px] h-[150px] content-[url(/public/assets/pattern-curved-line-2.svg)];
+}
+button {
   cursor: pointer;
 }
-
+.highlight:hover{
+  @apply  bg-gradient-to-r from-purple via-pink to-orange; 
+}
+.highligh_img:hover{
+  filter: brightness(0) saturate(100%) invert(55%) sepia(100%) saturate(6138%) hue-rotate(276deg) brightness(93%) contrast(99%);
+}
 body {
-  font-family: "Epilogue", sans-serif;
+  font-family: 'Epilogue', sans-serif;
 }
